@@ -31,6 +31,7 @@ namespace Fileuploadcontrol
                         Fileuploadpng.PostedFile.SaveAs(Server.MapPath("~/Uploaded/" + Fileuploadpng.FileName));
                         Lbljpg.Text = "File Uploaded Successfully";
                         Lbljpg.ForeColor = System.Drawing.Color.Green;
+                        Image1.ImageUrl ="~/Uploaded/"+ Fileuploadpng.FileName;
                     }
                     else
                     {
